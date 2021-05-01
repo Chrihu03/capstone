@@ -1,0 +1,2 @@
+INSERT INTO moviesDB.movies (movie_id,is_adult,budget,imdb_id,original_language,original_title,overview,poster_path,release_date,revenue,status,runtime,tagline,title,vote_average,vote_count)
+(SELECT movie_id,is_adult,budget,imdb_id,original_language,original_title,overview,poster_path,release_date,revenue,runtime,status,tagline,title,vote_average,vote_count FROM moviesDB.movies_import);
